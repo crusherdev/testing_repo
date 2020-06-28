@@ -22,6 +22,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install -g crusher-cli@1.3.1
+      
+    - name: Testing
+      run: git remote -v  
 
 #     - name: Deploy to Heroku
 #       env:

@@ -27,4 +27,4 @@ jobs:
       env:
         HEROKU_API_TOKEN: ${{ secrets.HEROKU_API_TOKEN }}
         HEROKU_APP_NAME: "crusher-test"
-      run: git push https://heroku:4061a111-a6e1-45ca-b299-2bfa71b94ac1@git.heroku.com/crusher-test.git
+      run: git push https://heroku:4061a111-a6e1-45ca-b299-2bfa71b94ac1@git.heroku.com/crusher-test.git master

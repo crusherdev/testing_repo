@@ -21,7 +21,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm install -g crusher-cli@1.3.23
+    - run: npm install -g crusher-cli@1.3.24
 
 #     - name: Deploy to Heroku
 #       env:
@@ -30,4 +30,4 @@ jobs:
 #       run: git push https://heroku:4061a111-a6e1-45ca-b299-2bfa71b94ac1@git.heroku.com/crusher-test.git master
 
     - name: RUN CLI Checks
-      run: npx crusher-cli run --project_id=26 --base_url=https://google.com --crusher_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjozNSwidGVhbV9pZCI6MjUsImlhdCI6MTU5MzM3Nzg3OSwiZXhwIjo1MTkzMzc0Mjc5fQ.rNgqdmVYLmgsUy_p6cU0nQ3A8CYcgpO9CXNHv25i088
+      run: ./bin/run run --project_id=40  --crusher_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0NSwidGVhbV9pZCI6MzQsImlhdCI6MTU5NDk5Mzg3MywiZXhwIjo1MTk0OTkwMjczfQ.5rf2rEkjh1mXb7OagnFDRvyY1qGxcFvp8naFmxgsaDk
